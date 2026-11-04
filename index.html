@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="fr" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Studio Plume · Massage Kobido et drainage lymphatique à Brest</title>
+  <meta name="description" content="Studio Plume, institut de massages à Brest, rue de Lyon : Kobido, drainage lymphatique méthode Vodder et cartes cadeaux, par Clémence Autret. Du lundi au samedi, 10 h – 18 h. Réservez en ligne.">
+  <meta name="theme-color" content="#FAD27B">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Studio Plume · Massage Kobido et drainage lymphatique à Brest">
+  <meta property="og:description" content="Kobido, drainage lymphatique, madérothérapie : un studio de massages chaleureux au 46 rue de Lyon, à Brest.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <script>document.documentElement.className = 'js';</script>
+
+  <link rel="preload" href="assets/fonts/young-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/figtree-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/img/kobido-mains.webp" as="image" type="image/webp">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "DaySpa",
+    "name": "Studio Plume - Clémence Autret",
+    "description": "Institut de massages à Brest : Kobido, drainage lymphatique méthode Vodder, madérothérapie et cartes cadeaux.",
+    "telephone": "+33689093113",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "46 Rue de Lyon",
+      "postalCode": "29200",
+      "addressLocality": "Brest",
+      "addressCountry": "FR"
+    },
+    "hasMap": "https://maps.app.goo.gl/cr1kbyqma9CXJkx36",
+    "sameAs": ["https://www.planity.com/studio-plume-clemence-autret-29200-brest"],
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "10:00",
+        "closes": "18:00"
+      }
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Carte des prestations",
+      "itemListElement": [
+        { "@type": "Offer", "priceCurrency": "EUR", "price": "80", "itemOffered": { "@type": "Service", "name": "Massage Kobido (55 min)" } },
+        { "@type": "Offer", "priceCurrency": "EUR", "price": "110", "itemOffered": { "@type": "Service", "name": "Drainage lymphatique, méthode Vodder (1 h 15)" } },
+        { "@type": "Offer", "priceCurrency": "EUR", "price": "180", "itemOffered": { "@type": "Service", "name": "Drainage lymphatique + Kobido (2 h)" } }
+      ]
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip" href="#contenu">Aller au contenu</a>
+
+  <!-- ===== Préchargeur : le néon s'allume, le store se relève ===== -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <svg class="feather loader__feather" data-feather="loader" focusable="false"></svg>
+      <p class="loader__sign">
+        <span class="neon neon--glow">Studio Plume</span>
+        <span class="neon neon--core">Studio Plume</span>
+      </p>
+      <p class="loader__sub">Brest · Kobido · Drainage lymphatique</p>
+    </div>
+  </div>
+
+  <div class="progress" id="progress" aria-hidden="true"><span></span></div>
+
+  <!-- ===== En-tête : toile et lambrequin festonné ===== -->
+  <header class="site-header" id="header">
+    <div class="bar">
+      <a class="brand" href="#top" aria-label="Studio Plume, retour en haut de page">
+        <svg class="feather brand__feather" data-feather="mini" focusable="false" aria-hidden="true"></svg>
+        <span class="brand__name">Studio Plume</span>
+      </a>
+      <nav class="nav" aria-label="Navigation principale">
+        <ul>
+          <li><a class="link" href="#rituel">Le rituel</a></li>
+          <li><a class="link" href="#soins">Les soins</a></li>
+          <li><a class="link" href="#offrir">Offrir</a></li>
+          <li><a class="link" href="#avis">Avis</a></li>
+          <li><a class="link" href="#venir">Venir</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn--sm btn--ink magnetic" data-book href="https://www.planity.com/studio-plume-clemence-autret-29200-brest" target="_blank" rel="noopener">
+        <span class="btn__fill" aria-hidden="true"></span><span class="btn__label">Réserver</span>
+      </a>
+      <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu">
+        <span></span><span></span>
+      </button>
+    </div>
+    <div class="valance" aria-hidden="true"></div>
+  </header>
+
+  <!-- Menu mobile plein écran -->
+  <div class="menu" id="menu" aria-hidden="true" inert>
+    <nav aria-label="Menu mobile">
+      <ul>
+        <li><a href="#rituel">Le rituel</a></li>
+        <li><a href="#soins">Les soins</a></li>
+        <li><a href="#offrir">Offrir</a></li>
+        <li><a href="#galerie">Galerie</a></li>
+        <li><a href="#avis">Avis</a></li>
+        <li><a href="#venir">Venir</a></li>
+      </ul>
+    </nav>
+    <div class="menu__foot">
+      <a class="btn btn--honey" href="https://www.planity.com/studio-plume-clemence-autret-29200-brest" target="_blank" rel="noopener"><span class="btn__fill" aria-hidden="true"></span><span class="btn__label">Prendre rendez-vous</span></a>
+      <a class="menu__tel" href="tel:+33689093113">06 89 09 31 13</a>
+    </div>
+  </div>
+
+  <main id="contenu">
+  <a class="call-fab" href="tel:+33689093113" aria-label="Appeler le Studio Plume au 06 89 09 31 13">
+    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path d="M6.6 3.5 9 3l1.7 4.2-1.9 1.4a11.2 11.2 0 0 0 5.6 5.6l1.4-1.9L20 13.9l-.5 2.4a2.5 2.5 0 0 1-2.7 2A14.6 14.6 0 0 1 4.6 6.2a2.5 2.5 0 0 1 2-2.7Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+    <span>Appeler</span>
+  </a>
+
+    <!-- ===== 1. Hero ===== -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__sun" data-parallax="-0.10" aria-hidden="true"></div>
+      <div class="hero__grid container">
+        <div class="hero__copy">
+          <h1 class="hero__title" id="hero-title" data-split="chars">
+            <span class="line">Studio</span>
+            <span class="line line--2">Plume</span>
+          </h1>
+          <p class="hero__script script" data-hero-in>Ici, on ralentit.</p>
+          <p class="hero__lead" data-hero-in>Kobido et drainage lymphatique, du bout des doigts de Clémence Autret, dans un studio chaleureux de la rue de Lyon, à Brest.</p>
+          <div class="hero__cta" data-hero-in>
+            <a class="btn btn--ink magnetic" data-book href="https://www.planity.com/studio-plume-clemence-autret-29200-brest" target="_blank" rel="noopener">
+              <span class="btn__fill" aria-hidden="true"></span><span class="btn__label">Prendre rendez-vous</span>
+            </a>
+            <a class="hero__tel link" href="tel:+33689093113">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M6.6 3.5 9 3l1.7 4.2-1.9 1.4a11.2 11.2 0 0 0 5.6 5.6l1.4-1.9L20 13.9l-.5 2.4a2.5 2.5 0 0 1-2.7 2A14.6 14.6 0 0 1 4.6 6.2a2.5 2.5 0 0 1 2-2.7Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+              06 89 09 31 13
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__stage" aria-hidden="false">
+          <div class="hero__disc" data-parallax="0.06" aria-hidden="true"></div>
+          <div class="window" data-hero-window>
+            <div class="window__rim" aria-hidden="true"></div>
+            <div class="window__glass">
+              <img class="window__img" data-kenburns src="assets/img/kobido-mains.webp" width="1200" height="714" fetchpriority="high"
+                   alt="Les mains de la praticienne au-dessus du visage d'une cliente allongée, pendant un massage Kobido, dans une lumière chaude.">
+            </div>
+          </div>
+          <svg class="feather hero__feather" data-feather="hero" data-parallax="-0.22" focusable="false" aria-hidden="true"></svg>
+          <svg class="feather hero__feather hero__feather--b" data-feather="hero-b" data-parallax="0.16" focusable="false" aria-hidden="true"></svg>
+          <div class="door-sign" id="doorSign" data-parallax="-0.05">
+            <span class="door-sign__strings" aria-hidden="true"></span>
+            <div class="door-sign__board">
+              <span class="door-sign__small">Studio Plume</span>
+              <strong class="door-sign__state" id="doorState">Bienvenue</strong>
+              <span class="door-sign__small" id="doorWhen">lundi – samedi · 10 h – 18 h</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="hero__hours" data-hero-in>Du lundi au samedi, de 10 h à 18 h · 46 rue de Lyon, Brest</p>
+      <a class="scroll-cue" href="#rituel" aria-label="Descendre vers la suite"><span></span></a>
+    </section>
+
+    <!-- ===== 2. Bandeau défilant (store de la boutique) ===== -->
+    <section class="marquee" aria-hidden="true" data-edge="honey">
+      <div class="marquee__row" data-dir="-1">
+        <div class="marquee__track marquee__track--serif">
+          <span>Kobido</span><i></i><span>Drainage lymphatique</span><i></i><span>Méthode Vodder</span><i></i><span>Madérothérapie</span><i></i><span>Cartes cadeaux</span><i></i>
+        </div>
+      </div>
+      <div class="marquee__row" data-dir="1">
+        <div class="marquee__track marquee__track--script">
+          <span>visage</span><i></i><span>nuque</span><i></i><span>épaules</span><i></i><span>trapèzes</span><i></i><span>lymphe</span><i></i><span>lenteur</span><i></i><span>chaleur</span><i></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 3. Le rituel (section pinnée, storytelling) ===== -->
+    <section class="ritual" id="rituel" aria-labelledby="rituel-title" data-edge="terracotta">
+      <div class="ritual__pin">
+        <div class="ritual__glow" aria-hidden="true"></div>
+        <svg class="feather ritual__feather" data-feather="ritual" focusable="false" aria-hidden="true"></svg>
+        <div class="ritual__inner container">
+          <div class="ritual__text">
+            <h2 class="title title--light" id="rituel-title" data-split="words">Quatre temps pour <em class="script">redescendre</em></h2>
+            <ol class="steps">
+              <li class="step is-active">
+                <h3 class="step__name">On pousse la porte</h3>
+                <p>Lumière ambrée, bouquet, bols posés sur le bois, néon allumé : le studio se découvre avant même qu'on s'allonge. Manteau, téléphone, journée : on pose tout.</p>
+                <img class="step__pic" src="assets/img/enseigne-neon.webp" width="1200" height="714" loading="lazy" alt="L'enseigne lumineuse « Studio Plume » en néon chaud, posée sur une étagère en bois avec un bouquet et des bols.">
+              </li>
+              <li class="step">
+                <h3 class="step__name">Les mains d'abord</h3>
+                <p>Le Kobido travaille le visage, les épaules, la nuque et les trapèzes. Cinquante-cinq minutes de gestes minutieux, enveloppants, ni pressés ni mécaniques.</p>
+                <img class="step__pic" src="assets/img/praticienne.webp" width="1200" height="714" loading="lazy" alt="La praticienne, penchée sur une cliente allongée, masse délicatement son visage.">
+              </li>
+              <li class="step">
+                <h3 class="step__name">La fraîcheur d'une pierre</h3>
+                <p>Selon le soin, un rouleau de pierre rose glisse sur la peau et prolonge le geste des mains. Le visage se détend, le souffle suit.</p>
+                <img class="step__pic" src="assets/img/rouleau-pierre.webp" width="1200" height="714" loading="lazy" alt="Un rouleau de pierre rose passé sur le visage d'une cliente, une main posée sur sa tempe.">
+              </li>
+              <li class="step">
+                <h3 class="step__name">Le calme, jusqu'aux cheveux</h3>
+                <p>On termine lentement, les doigts dans les cheveux. Puis on se relève sans rien presser, et on retrouve la lumière du dehors, un ton plus doux.</p>
+                <img class="step__pic" src="assets/img/massage-cuir-chevelu.webp" width="1200" height="714" loading="lazy" alt="Les doigts de la praticienne dans les cheveux d'une cliente, massage du cuir chevelu.">
+              </li>
+            </ol>
+            <div class="rail" aria-hidden="true"><span class="rail__fill"></span></div>
+          </div>
+          <div class="ritual__stage" aria-hidden="true">
+            <div class="window window--tall">
+              <div class="window__rim"></div>
+              <div class="window__glass">
+                <img class="stage__img" src="assets/img/enseigne-neon.webp" width="1200" height="714" loading="lazy" alt="">
+                <img class="stage__img" src="assets/img/praticienne.webp" width="1200" height="714" loading="lazy" alt="">
+                <img class="stage__img" src="assets/img/rouleau-pierre.webp" width="1200" height="714" loading="lazy" alt="">
+                <img class="stage__img" src="assets/img/massage-cuir-chevelu.webp" width="1200" height="714" loading="lazy" alt="">
+              </div>
+            </div>
+            <p class="stage__tag script">Studio Plume</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 4. Les soins (défilement horizontal piloté par le scroll) ===== -->
+    <section class="shop" id="soins" aria-labelledby="soins-title" data-edge="roast">
+      <div class="shop__pin">
+        <div class="shop__track">
+          <div class="shop__intro">
+            <h2 class="title title--cream" id="soins-title" data-split="words">La carte des <em class="script">soins</em></h2>
+            <p class="shop__lead">Trois soins signature, des prix affichés, des durées sans surprise. Chaque étiquette mène droit à la réservation.</p>
+            <p class="shop__hint" aria-hidden="true"><span>Faites défiler</span><svg viewBox="0 0 48 12" width="48" height="12"><path d="M0 6h44M38 1l6 5-6 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></p>
+          </div>
+
+          <article class="tag tag--linen" data-tilt>
+            <span class="tag__glare" aria-hidden="true"></span>
+            <span class="tag__hole" aria-hidden="true"></span>
+            <p class="tag__time">55 min</p>
+            <h3 class="tag__name">Massage <em class="script">Kobido</em></h3>
+            <p class="tag__text">Un véritable voyage sensoriel. Un massage du visage, des épaules, de la nuque et des trapèzes.</p>
+            <div class="tag__foot">
+              <p class="tag__price"><span class="sr-only">Prix : </span>80 <small>€</small></p>
+              <a class="btn btn--sm btn--ink magnetic" data-book href="https://www.planity.com/studio-plume-clemence-autret-29200-brest" target="_blank" rel="noopener"><span class="btn__fill" aria-hidden="true"></span><span class="btn__label">Réserver<span class="sr-only"> le massage Kobido</span></span></a>
+            </div>
+          </article>
+
+          <article class="tag tag--honey" data-tilt>
+            <span class="tag__glare" aria-hidden="true"></span>
+            <span class="tag__hole" aria-hidden="true"></span>
+            <p class="tag__time">1 h 15</p>
+            <h3 class="tag__name">Drainage <em class="script">lymphatique</em></h3>
+            <p class="tag__method">Méthode Vodder</p>
+            <p class="tag__text">Une technique manuelle douce qui stimule la circulation de la lymphe.</p>
+            <div class="tag__foot">
+              <p class="tag__price"><span class="sr-only">Prix : </span>110 <small>€</small></p>
+              <a class="btn btn--sm btn--ink magnetic" data-book href="https://www.planity.com/studio-plume-clemence-autret-29200-brest" target="_blank" rel="noopener"><span class="btn__fill" aria-hidden="true"></span><span class="btn__label">Réserver<span class="sr-only"> le drainage lymphatique</span></span></a>
+            </div>
+          </article>
+
+          <article class="tag tag--linen" data-tilt>
+            <span class="tag__glare" aria-hidden="true"></span>
+            <span class="tag__hole" aria-hidden="true"></span>
+            <p class="tag__time">2 h</p>
+            <h3 class="tag__name">Drainage <em class="script">+ Kobido</em></h3>
+            <p class="tag__text">Les deux soins réunis en une seule séance de deux heures, pour prendre vraiment son temps.</p>
+            <div class="tag__foot">
+              <p class="tag__price"><span class="sr-only">Prix : </span>180 <small>€</small></p>
+              <a class="btn btn--sm btn--ink magnetic" data-book href="https://www.planity.com/studio-plume-clemence-autret-29200-brest" target="_blank" rel="noopener"><span class="btn__fill" aria-hidden="true"></span><span class="btn__label">Réserver<span class="sr-only"> le drainage lymphatique avec Kobido</span></span></a>
+            </div>
+          </article>
+
+          <article class="tag tag--night" data-tilt>
+            <span class="tag__glare" aria-hidden="true"></span>
+            <span class="tag__hole" aria-hidden="true"></span>
+            <p class="tag__time">1 h 15 · offre spéciale</p>
+            <h3 class="tag__name">Madérothérapie</h3>
+            <p class="tag__text">Offre spéciale dès le 23 novembre : 1 h 15 à 80 € au lieu de 110 €.</p>
+            <div class="tag__foot">
+              <p class="tag__price"><span class="sr-only">Prix : </span>80 <small>€</small> <s><span class="sr-only">au lieu de </span>110 €</s></p>
+              <a class="btn btn--sm btn--honey magnetic" data-book href="https://www.planity.com/studio-plume-clemence-autret-29200-brest" target="_blank" rel="noopener"><span class="btn__fill" aria-hidden="true"></span><span class="btn__label">Réserver<span class="sr-only"> la madérothérapie</span></span></a>
+            </div>
+          </article>
+
+          <div class="shop__outro" aria-hidden="true">
+            <p class="script">à très vite</p>
+          </div>
+        </div>
+        <div class="shop__progress" aria-hidden="true"><span></span></div>
+      </div>
+    </section>
+
+    <!-- ===== 5. Chiffres clés ===== -->
+    <section class="figures" aria-labelledby="chiffres-title" data-edge="terracotta">
+      <div class="container">
+        <h2 class="sr-only" id="chiffres-title">La carte en chiffres</h2>
+        <p class="figures__text" data-figures>
+          <span class="figures__line"><span class="count" data-to="3"><span class="count__ghost">3</span><span class="count__val" aria-hidden="true">3</span></span> soins à la carte,</span>
+          <span class="figures__line"><span class="count" data-to="6"><span class="count__ghost">6</span><span class="count__val" aria-hidden="true">6</span></span> jours sur 7,</span>
+          <span class="figures__line">de <span class="count" data-to="55"><span class="count__ghost">55</span><span class="count__val" aria-hidden="true">55</span></span> minutes</span>
+          <span class="figures__line">à <span class="count" data-to="2"><span class="count__ghost">2</span><span class="count__val" aria-hidden="true">2</span></span> heures<span class="script figures__tail">et personne ne regarde la montre.</span></span>
+        </p>
+        <div class="stamp" data-stamp aria-hidden="true">
+          <span class="stamp__small script">dès</span>
+          <span class="stamp__price">80 €</span>
+          <span class="stamp__note">le Kobido · 55 min</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 6. Offrir ===== -->
+    <section class="gift" id="offrir" aria-labelledby="offrir-title" data-edge="honey">
+      <div class="container gift__grid">
+        <div class="gift__copy">
+          <h2 class="title" id="offrir-title" data-split="words">Offrir un <em class="script">moment</em></h2>
+          <p class="gift__lead" data-fade>Une carte cadeau pour chaque soin de la carte : une heure pour quelqu'un d'autre, sans rien à emballer.</p>
+          <div class="gift__shop" data-fade>
+            <h3>Où les trouver ?</h3>
+            <p>Les cartes cadeaux sont en vente chez « Let's Be », au <strong>4 rue du Couëdic</strong>. Ophélie vous y accueille sur place.</p>
+            <a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=Let%27s+Be+4+rue+du+Cou%C3%ABdic+Brest" target="_blank" rel="noopener">Voir l'adresse sur la carte<span class="sr-only"> (nouvel onglet)</span></a>
+          </div>
+        </div>
+        <ul class="gift__tickets" aria-label="Cartes cadeaux disponibles">
+          <li class="ticket ticket--honey" data-ticket>
+            <span class="ticket__stub">55 min</span>
+            <span class="ticket__body"><strong>Carte cadeau Kobido</strong><span>Visage, épaules, nuque et trapèzes : un voyage sensoriel.</span></span>
+          </li>
+          <li class="ticket ticket--terra" data-ticket>
+            <span class="ticket__stub">1 h 15</span>
+            <span class="ticket__body"><strong>Carte cadeau drainage lymphatique</strong><span>Une technique manuelle douce qui stimule la circulation de la lymphe.</span></span>
+          </li>
+          <li class="ticket ticket--roast" data-ticket>
+            <span class="ticket__stub">2 h</span>
+            <span class="ticket__body"><strong>Carte cadeau drainage + Kobido</strong><span>Les deux soins réunis en une seule séance.</span></span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== 7. Galerie ===== -->
+    <section class="gallery" id="galerie" aria-labelledby="galerie-title" data-edge="linen">
+      <div class="container">
+        <h2 class="title title--cream gallery__title" id="galerie-title" data-split="words">Dans la lumière du <em class="script">studio</em></h2>
+        <div class="gallery__grid">
+          <figure class="frame frame--arch g1" data-frame data-speed="0">
+            <div class="frame__inner"><img src="assets/img/kobido-mains.webp" width="1200" height="714" loading="lazy" style="object-position: 30% 50%" alt="Les mains de la praticienne au-dessus du visage d'une cliente allongée, pendant un massage Kobido, dans une lumière chaude."></div>
+            <figcaption>Les mains, au-dessus du visage</figcaption>
+          </figure>
+          <figure class="frame frame--wide g2" data-frame data-speed="-60">
+            <div class="frame__inner"><img src="assets/img/enseigne-neon.webp" width="1200" height="714" loading="lazy" alt="L'enseigne lumineuse « Studio Plume » en néon chaud, posée sur une étagère en bois avec un bouquet et des bols."></div>
+            <figcaption>Le néon du studio</figcaption>
+          </figure>
+          <figure class="frame frame--circle g3" data-frame data-speed="40">
+            <div class="frame__inner"><img src="assets/img/rouleau-pierre.webp" width="1200" height="714" loading="lazy" style="object-position: 55% 50%" alt="Un rouleau de pierre rose passé sur le visage d'une cliente, une main posée sur sa tempe."></div>
+            <figcaption>Une pierre rose, fraîche</figcaption>
+          </figure>
+          <figure class="frame frame--arch g4" data-frame data-speed="-30">
+            <div class="frame__inner"><img src="assets/img/praticienne.webp" width="1200" height="714" loading="lazy" style="object-position: 45% 50%" alt="La praticienne, penchée sur une cliente allongée, masse délicatement son visage."></div>
+            <figcaption>Le geste, de près</figcaption>
+          </figure>
+          <figure class="frame frame--pill g5" data-frame data-speed="50">
+            <div class="frame__inner"><img src="assets/img/massage-cuir-chevelu.webp" width="1200" height="714" loading="lazy" style="object-position: 60% 50%" alt="Les doigts de la praticienne dans les cheveux d'une cliente, massage du cuir chevelu."></div>
+            <figcaption>Jusqu'aux cheveux</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 8. Avis ===== -->
+    <section class="reviews" id="avis" aria-labelledby="avis-title" data-edge="roast">
+      <div class="container reviews__grid">
+        <div class="reviews__head">
+          <h2 class="title" id="avis-title" data-split="words">Les mots de celles qui sont <em class="script">venues</em></h2>
+          <p class="reviews__lead" data-fade>Avis de clientes, reproduits mot pour mot.</p>
+        </div>
+
+        <div class="reviews__stage" id="reviewStage" aria-roledescription="carrousel" aria-label="Avis de clientes">
+          <figure class="review is-active" data-i="0" aria-roledescription="diapositive" aria-label="Avis 1 sur 5">
+            <blockquote><p>J'ai testé Studio Plume à Brest et à Lampaul-Plouarzel dans la caravane (super concept original et super lieu pour une balade en bord de mer ensuite). J'ai adoré ces moments relaxants de qualité. On en ressort dans un état de grande zénitude, merci !</p></blockquote>
+            <figcaption>Elisa Roudaut</figcaption>
+          </figure>
+          <figure class="review" data-i="1" aria-roledescription="diapositive" aria-label="Avis 2 sur 5">
+            <blockquote><p>Suite à un concours gagné sur Instagram avec Le Jardin de Gwenn, j’ai eu la chance de découvrir Studio Plume pour un drainage lymphatique d'1h30. Le massage était exceptionnel du début à la fin. Une vraie parenthèse de bien-être, avec une praticienne qui a clairement un don. Je recommande sans hésiter.</p></blockquote>
+            <figcaption>Astrid Affre</figcaption>
+          </figure>
+          <figure class="review" data-i="2" aria-roledescription="diapositive" aria-label="Avis 3 sur 5">
+            <blockquote><p>Clémence m'a realisé un Kobido à 48h de mon mariage, pour des traits reposés et repulpés. Ce fut un instant de bien-être absolu grâce aux doigts de fée de Clémence, si douce, rassurante et professionnelle.<br>Un cocon enveloppant et un vrai moment suspendu! Un grand merci</p></blockquote>
+            <figcaption>Lucie Da Purificaçao</figcaption>
+          </figure>
+          <figure class="review" data-i="3" aria-roledescription="diapositive" aria-label="Avis 4 sur 5">
+            <blockquote><p>J’ai eu l’occasion d’avoir un massage doux ainsi qu’un Kobido.<br>J’ai adoré et je recommande à 100%. Clémence à des doigts de fée !</p></blockquote>
+            <figcaption>Nathalie Postec</figcaption>
+          </figure>
+          <figure class="review" data-i="4" aria-roledescription="diapositive" aria-label="Avis 5 sur 5">
+            <blockquote><p>C'est la 2e fois que je fais le massage Kobido qui me convient parfaitement. Le massage est très minutieux et détaillé, il fait un bien fou au visage ! Je recommande à 300% de tester les soins proposés, c'est une véritable détente profonde</p></blockquote>
+            <figcaption>Melanie Mono</figcaption>
+          </figure>
+        </div>
+
+        <div class="reviews__nav">
+          <button class="rbtn" id="rPrev" type="button" aria-label="Avis précédent"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <ol class="dots" id="rDots" aria-label="Choisir un avis">
+            <li><button type="button" class="dot is-active" aria-label="Avis 1 : Elisa Roudaut" aria-current="true"><span></span></button></li>
+            <li><button type="button" class="dot" aria-label="Avis 2 : Astrid Affre"><span></span></button></li>
+            <li><button type="button" class="dot" aria-label="Avis 3 : Lucie Da Purificaçao"><span></span></button></li>
+            <li><button type="button" class="dot" aria-label="Avis 4 : Nathalie Postec"><span></span></button></li>
+            <li><button type="button" class="dot" aria-label="Avis 5 : Melanie Mono"><span></span></button></li>
+          </ol>
+          <button class="rbtn" id="rNext" type="button" aria-label="Avis suivant"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <button class="rbtn rbtn--pause" id="rPause" type="button" aria-pressed="false" aria-label="Mettre le défilement des avis en pause">
+            <svg class="i-pause" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M8 5v14M16 5v14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg class="i-play" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M8 5l11 7-11 7Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 9. Appel à l'action ===== -->
+    <section class="cta" id="rdv" aria-labelledby="cta-title" data-edge="honey">
+      <div class="container cta__inner">
+        <svg class="feather cta__feather" data-feather="ritual" focusable="false" aria-hidden="true"></svg>
+        <svg class="badge" viewBox="0 0 200 200" aria-hidden="true" focusable="false">
+          <defs><path id="circ" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+          <text><textPath href="#circ" startOffset="0">réserver · prendre son temps · réserver · prendre son temps ·</textPath></text>
+        </svg>
+        <h2 class="cta__title" id="cta-title" data-split="words">Cette heure-là peut être la <em class="script">vôtre</em></h2>
+        <p class="cta__lead" data-fade>Réservez en ligne en quelques secondes, ou appelez directement le studio : du lundi au samedi, de 10 h à 18 h.</p>
+        <div class="cta__actions" data-fade>
+          <a class="btn btn--cream btn--xl magnetic" data-book href="https://www.planity.com/studio-plume-clemence-autret-29200-brest" target="_blank" rel="noopener"><span class="btn__fill" aria-hidden="true"></span><span class="btn__label">Prendre rendez-vous</span></a>
+          <a class="btn btn--line btn--xl magnetic" href="tel:+33689093113"><span class="btn__fill" aria-hidden="true"></span><span class="btn__label">06 89 09 31 13</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 10. Nous trouver ===== -->
+    <section class="find" id="venir" aria-labelledby="venir-title" data-edge="terracotta">
+      <div class="container find__grid">
+        <div class="find__info">
+          <h2 class="title" id="venir-title" data-split="words">Nous <em class="script">trouver</em></h2>
+          <address class="find__addr" data-fade>
+            <strong>Studio Plume · Clémence Autret</strong><br>
+            46 rue de Lyon<br>29200 Brest
+          </address>
+          <p class="find__open" id="openNow" data-fade><span class="dotlive" aria-hidden="true"></span><span id="openNowText">Du lundi au samedi, 10 h – 18 h</span></p>
+          <table class="hours" data-fade>
+            <caption class="sr-only">Horaires d'ouverture</caption>
+            <tbody>
+              <tr data-day="1"><th scope="row">Lundi</th><td>10 h – 18 h</td></tr>
+              <tr data-day="2"><th scope="row">Mardi</th><td>10 h – 18 h</td></tr>
+              <tr data-day="3"><th scope="row">Mercredi</th><td>10 h – 18 h</td></tr>
+              <tr data-day="4"><th scope="row">Jeudi</th><td>10 h – 18 h</td></tr>
+              <tr data-day="5"><th scope="row">Vendredi</th><td>10 h – 18 h</td></tr>
+              <tr data-day="6"><th scope="row">Samedi</th><td>10 h – 18 h</td></tr>
+              <tr data-day="0"><th scope="row">Dimanche</th><td>Fermé</td></tr>
+            </tbody>
+          </table>
+          <ul class="find__links" data-fade>
+            <li><a class="link" href="tel:+33689093113">Appeler le 06 89 09 31 13</a></li>
+            <li><a class="link" data-book href="https://www.planity.com/studio-plume-clemence-autret-29200-brest" target="_blank" rel="noopener">Réserver sur Planity<span class="sr-only"> (nouvel onglet)</span></a></li>
+            <li><a class="link" href="https://maps.app.goo.gl/cr1kbyqma9CXJkx36" target="_blank" rel="noopener">Ouvrir dans Google Maps<span class="sr-only"> (nouvel onglet)</span></a></li>
+          </ul>
+        </div>
+        <div class="find__map" data-mapframe>
+          <iframe title="Carte Google Maps : Studio Plume, 46 rue de Lyon, Brest" loading="lazy" referrerpolicy="no-referrer-when-downgrade" tabindex="-1"
+                  src="https://www.google.com/maps?q=46+Rue+de+Lyon,+29200+Brest&amp;output=embed"></iframe>
+          <a class="find__maplink" href="https://maps.app.goo.gl/cr1kbyqma9CXJkx36" target="_blank" rel="noopener" aria-label="Ouvrir l'adresse du Studio Plume dans Google Maps (nouvel onglet)">
+            <span class="find__pin"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0 1 13 0c0 5-6.5 11-6.5 11Z" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="10" r="2.3" fill="currentColor"/></svg>Ouvrir dans Maps ↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== 11. Pied de page ===== -->
+  <footer class="footer" data-edge="linen">
+    <div class="container">
+      <p class="footer__sign neon neon--footer" aria-hidden="true">Studio Plume</p>
+      <div class="footer__cols">
+        <div>
+          <p class="footer__h">Studio Plume</p>
+          <p>Clémence Autret<br>46 rue de Lyon<br>29200 Brest</p>
+        </div>
+        <div>
+          <p class="footer__h">Horaires</p>
+          <p>Lundi – samedi<br>10 h – 18 h<br>Dimanche : fermé</p>
+        </div>
+        <div>
+          <p class="footer__h">Parcourir</p>
+          <ul>
+            <li><a class="link" href="#rituel">Le rituel</a></li>
+            <li><a class="link" href="#soins">Les soins</a></li>
+            <li><a class="link" href="#offrir">Cartes cadeaux</a></li>
+            <li><a class="link" href="#avis">Avis</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__h">Réserver</p>
+          <ul>
+            <li><a class="link" data-book href="https://www.planity.com/studio-plume-clemence-autret-29200-brest" target="_blank" rel="noopener">Planity<span class="sr-only"> (nouvel onglet)</span></a></li>
+            <li><a class="link" href="tel:+33689093113">06 89 09 31 13</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer__legal">© <span id="year">2026</span> Studio Plume · Clémence Autret · Brest</p>
+    </div>
+  </footer>
+
+  <script src="assets/vendor/gsap.min.js"></script>
+  <script src="assets/vendor/ScrollTrigger.min.js"></script>
+  <script src="assets/vendor/lenis.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
