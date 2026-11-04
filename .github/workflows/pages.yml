@@ -1,0 +1,47 @@
+name: Déployer sur GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+
+      # Seuls les fichiers du site sont publiés : pas de .claude/, .impeccable/,
+      # PRODUCT.md, DESIGN.md ni les fichiers de provenance des images.
+      - name: Préparer le site
+        run: |
+          mkdir _site
+          cp -r index.html favicon.svg assets _site/
+          find _site/assets/img -name '*.json' -delete
+          touch _site/.nojekyll
+          echo "Fichiers publiés :" && find _site -type f | sort
+
+      - name: Configurer Pages
+        uses: actions/configure-pages@v5
+
+      - name: Envoyer l'artefact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Déployer
+        id: deployment
+        uses: actions/deploy-pages@v4

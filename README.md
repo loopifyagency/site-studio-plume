@@ -42,9 +42,14 @@ Les 5 photos fournies mesurent 600 px de large et ont été agrandies ×2 (sans 
 - Carrousel d'avis avec bouton pause, flèches clavier et pastilles ; menu mobile avec focus géré.
 - Images en `loading="lazy"` sauf l'image du hero (préchargée).
 
-## Mise en ligne
+## Mise en ligne (GitHub Pages)
 
-Déployer la racine du dépôt comme dossier statique. Les dossiers `.claude/`, `.impeccable/` et les fichiers `PRODUCT.md` / `DESIGN.md` servent uniquement au travail de conception : les exclure du site publié si l'hébergeur le permet.
+Le workflow `.github/workflows/pages.yml` publie le site à chaque push sur `main` (ou à la demande, onglet **Actions** > *Déployer sur GitHub Pages* > *Run workflow*).
+
+- Adresse : https://loopifyagency.github.io/site-studio-plume/
+- Réglage unique, à faire une seule fois : **Settings > Pages > Build and deployment > Source : GitHub Actions**.
+- Seuls `index.html`, `favicon.svg` et `assets/` sont publiés : les dossiers de conception (`.claude/`, `.impeccable/`) et `PRODUCT.md` / `DESIGN.md` restent hors du site.
+- Tous les chemins du site sont relatifs, il fonctionne aussi bien sous `/site-studio-plume/` que sur un domaine personnalisé.
 
 ## Licences tierces
 
