@@ -1,0 +1,282 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-04T10:03:57Z",
+  "title": "Design System: Studio Plume",
+  "extensions": {
+    "colorMeta": {
+      "honey": {
+        "role": "primary",
+        "displayName": "Miel du matin",
+        "canonical": "#FAD27B",
+        "tonalRamp": [
+          "#544227",
+          "#6C5733",
+          "#846B3F",
+          "#9B804B",
+          "#FBD687",
+          "#FCDE9E",
+          "#FDE7B6",
+          "#FEEFCE"
+        ]
+      },
+      "honey-light": {
+        "role": "secondary",
+        "displayName": "Miel clair",
+        "canonical": "#FFE7A8",
+        "tonalRamp": [
+          "#564833",
+          "#6E5F44",
+          "#867555",
+          "#9E8C65",
+          "#FFE9AF",
+          "#FFEDBE",
+          "#FFF1CC",
+          "#FFF5DA"
+        ]
+      },
+      "terracotta": {
+        "role": "primary",
+        "displayName": "Terracotta de toile",
+        "canonical": "#C55E38",
+        "tonalRamp": [
+          "#462214",
+          "#582A19",
+          "#6A331E",
+          "#7C3B23",
+          "#CB6E4B",
+          "#D78E70",
+          "#E3AE96",
+          "#EFCEBB"
+        ]
+      },
+      "clay": {
+        "role": "secondary",
+        "displayName": "Argile profonde",
+        "canonical": "#9C4222",
+        "tonalRamp": [
+          "#3A1A0E",
+          "#481F11",
+          "#562514",
+          "#642B16",
+          "#A65537",
+          "#BB7B61",
+          "#CFA18B",
+          "#E3C6B5"
+        ]
+      },
+      "roast": {
+        "role": "neutral",
+        "displayName": "Brun torréfié",
+        "canonical": "#2A140D",
+        "tonalRamp": [
+          "#1A0D08",
+          "#1C0E09",
+          "#1F0F09",
+          "#21100A",
+          "#402C24",
+          "#6C5B52",
+          "#988A81",
+          "#C3BAAF"
+        ]
+      },
+      "linen": {
+        "role": "neutral",
+        "displayName": "Lin",
+        "canonical": "#FBF0DA",
+        "tonalRamp": [
+          "#554A41",
+          "#6C6257",
+          "#847A6D",
+          "#9C9183",
+          "#FBF1DC",
+          "#FCF3E0",
+          "#FDF5E4",
+          "#FEF7E8"
+        ]
+      },
+      "cream": {
+        "role": "neutral",
+        "displayName": "Crème",
+        "canonical": "#FFF6E3",
+        "tonalRamp": [
+          "#564C44",
+          "#6E645B",
+          "#867D71",
+          "#9E9588",
+          "#FFF6E4",
+          "#FFF7E6",
+          "#FFF8E9",
+          "#FFF9EB"
+        ]
+      },
+      "kraft": {
+        "role": "neutral",
+        "displayName": "Kraft",
+        "canonical": "#EBD3A5",
+        "tonalRamp": [
+          "#504233",
+          "#665743",
+          "#7C6C53",
+          "#938064",
+          "#EDD7AD",
+          "#F1DFBC",
+          "#F5E7CB",
+          "#F9EFDA"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Nom du studio dans le hero, bornée par la hauteur d'écran."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Titres de section, mots révélés sous masque."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Noms de soins et étapes du rituel."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Texte courant, 17 px, interligne 1,6."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Durées et écriteau, capitales espacées."
+      },
+      "script": {
+        "displayName": "Script",
+        "purpose": "Un mot d'accent par titre, imite le tube du néon."
+      }
+    },
+    "shadows": [
+      {
+        "name": "window",
+        "value": "0 46px 70px -34px rgba(42,20,13,.65)",
+        "purpose": "Fenêtres en arche des photos."
+      },
+      {
+        "name": "tag",
+        "value": "0 34px 44px -26px rgba(42,20,13,.65)",
+        "purpose": "Étiquettes de prix."
+      },
+      {
+        "name": "ticket",
+        "value": "0 24px 30px -22px rgba(42,20,13,.6)",
+        "purpose": "Tickets cadeaux."
+      },
+      {
+        "name": "neon",
+        "value": "0 0 10px #FAD27B, 0 0 40px #FAD27B, 0 0 100px #C55E38",
+        "purpose": "Réservé aux enseignes néon réelles."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-expo-out",
+        "value": "cubic-bezier(.16, 1, .3, 1)",
+        "purpose": "Entrées, survols, remplissage des boutons."
+      },
+      {
+        "name": "ease-expo-in-out",
+        "value": "cubic-bezier(.76, 0, .24, 1)",
+        "purpose": "Rideau du préchargeur, ouverture du menu."
+      },
+      {
+        "name": "scroll-lerp",
+        "value": "Lenis lerp 0.085",
+        "purpose": "Inertie douce du défilement."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "tablet-desktop",
+        "value": "900px"
+      },
+      {
+        "name": "compact",
+        "value": "640px"
+      },
+      {
+        "name": "phone",
+        "value": "520px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Bouton principal",
+      "kind": "button",
+      "refersTo": "button-ink",
+      "description": "Action de réservation, pilule brun qui se remplit d'argile.",
+      "html": "<a class=\"ds-btn\" href=\"#\">Prendre rendez-vous</a>",
+      "css": ".ds-btn{display:inline-flex;padding:1.05em 1.9em;border-radius:999px;border:2px solid #2A140D;background:#2A140D;color:#FFF6E3;font:700 16px Figtree,system-ui,sans-serif;text-decoration:none;transition:background-color .5s cubic-bezier(.16,1,.3,1)}.ds-btn:hover,.ds-btn:focus-visible{background:#9C4222;border-color:#9C4222}.ds-btn:focus-visible{outline:3px solid #9C4222;outline-offset:4px}"
+    },
+    {
+      "name": "Étiquette de prix",
+      "kind": "card",
+      "refersTo": "price-tag-linen",
+      "description": "Tarif suspendu à un fil : durée, nom, texte, prix et réservation.",
+      "html": "<article class=\"ds-tag\"><p class=\"ds-time\">55 MIN</p><h3>Massage Kobido</h3><p class=\"ds-price\">80 <small>€</small></p></article>",
+      "css": ".ds-tag{width:300px;padding:3.4rem 2rem 2rem;border-radius:22px 22px 18px 18px;background:#FBF0DA;color:#2A140D;box-shadow:0 34px 44px -26px rgba(42,20,13,.65);font-family:Figtree,sans-serif}.ds-time{margin:0;font-size:.8rem;font-weight:700;letter-spacing:.14em}.ds-tag h3{margin:.6rem 0 1.5rem;font:400 2.3rem/1.02 \"Young Serif\",Georgia,serif}.ds-price{margin:0;font:400 4.6rem/.9 \"Young Serif\",Georgia,serif}.ds-price small{font-size:.46em}"
+    },
+    {
+      "name": "Ticket cadeau",
+      "kind": "custom",
+      "refersTo": "ticket-body",
+      "description": "Talon coloré perforé et corps kraft.",
+      "html": "<div class=\"ds-ticket\"><span class=\"ds-stub\">2 h</span><span class=\"ds-body\"><strong>Carte cadeau drainage + Kobido</strong></span></div>",
+      "css": ".ds-ticket{display:flex;min-height:8rem;border-radius:16px;background:#EBD3A5;color:#2A140D;box-shadow:0 24px 30px -22px rgba(42,20,13,.6);font-family:Figtree,sans-serif;transition:transform .8s cubic-bezier(.16,1,.3,1)}.ds-ticket:hover{transform:translateY(-8px) rotate(1deg)}.ds-stub{display:grid;place-items:center;flex:0 0 7rem;border-radius:16px 0 0 16px;background:#2A140D;color:#FAD27B;font:400 2rem \"Young Serif\",Georgia,serif;border-right:3px dotted rgba(42,20,13,.5)}.ds-body{display:grid;align-content:center;padding:1rem 1.5rem}.ds-body strong{font:400 1.4rem/1.12 \"Young Serif\",Georgia,serif}"
+    },
+    {
+      "name": "Écriteau OUVERT",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Écriteau suspendu, état calculé sur les horaires réels.",
+      "html": "<div class=\"ds-sign\"><small>STUDIO PLUME</small><strong>OUVERT</strong><small>JUSQU'À 18 H</small></div>",
+      "css": ".ds-sign{display:grid;justify-items:center;min-width:132px;padding:.75rem 1rem;border:2px solid #2A140D;border-radius:12px;background:#FFF6E3;color:#2A140D;text-align:center;box-shadow:0 18px 24px -14px rgba(42,20,13,.55);font-family:Figtree,sans-serif}.ds-sign small{font-size:.75rem;font-weight:700;letter-spacing:.14em}.ds-sign strong{font:400 1.85rem/1.05 \"Young Serif\",Georgia,serif;letter-spacing:.02em}"
+    }
+  ],
+  "narrative": {
+    "northStar": "La devanture de la rue de Lyon",
+    "overview": "Le site est la façade d'une petite boutique de Brest vue pendant une après-midi : lumière miel à l'ouverture, auvent de toile terracotta, puis le soir qui tombe jusqu'à l'allumage du néon « Studio Plume ». L'heure du jour est la palette.",
+    "keyCharacteristics": [
+      "Une plume au trait unique répétée partout",
+      "Arches et festons comme seules formes signatures",
+      "Couleur par grandes plages",
+      "Néon uniquement sur l'enseigne réelle",
+      "Grain de papier kraft discret"
+    ],
+    "rules": [
+      {
+        "name": "The Large-On-Terracotta Rule",
+        "body": "Sur terracotta, tout texte fait au moins 24 px, ou 18,66 px en gras.",
+        "section": "colors"
+      },
+      {
+        "name": "The Real Neon Rule",
+        "body": "Le halo lumineux n'existe que sur les enseignes qui reproduisent le néon du studio.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Script Word Rule",
+        "body": "Un titre contient au plus un mot en script.",
+        "section": "typography"
+      }
+    ],
+    "dos": [
+      "Do passer toute image principale par une arche ou un cercle.",
+      "Do séparer les sections par un feston de la couleur de la section précédente.",
+      "Do garder le miel et la terracotta en aplats larges.",
+      "Do animer en transform et opacity, courbe expo, avec version prefers-reduced-motion."
+    ],
+    "donts": [
+      "Don't mettre du texte courant sur terracotta.",
+      "Don't faire briller autre chose que l'enseigne.",
+      "Don't utiliser le lin comme fond par défaut.",
+      "Don't inventer des chiffres, avis ou titres."
+    ]
+  }
+}
